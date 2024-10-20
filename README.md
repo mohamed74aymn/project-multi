@@ -19,3 +19,13 @@ This Python application processes an image by converting it to grayscale, applyi
 Install the dependencies using:
 ```bash
 pip install Pillow numpy
+How It Works
+User Input: Prompts the user to enter the path of an image file for processing.
+Load Image: Loads the image using the Pillow library.
+Pixel Count: Calculates the total number of pixels in the image before and after processing.
+Grayscale and Binary Conversion: Converts the image to grayscale and applies a binary threshold.
+Resizing:
+If the image has ≤ 10 unique pixel values, it is scaled down to 30% of the original size.
+For 11–50 unique values, it is scaled down to 60%.
+If the image has more than 50 unique values, no resizing is applied.
+Saving Output: The processed image is saved in the same directory as the input file, with _binary appended to the file name.
