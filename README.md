@@ -19,3 +19,6 @@ This Python application processes an image by converting it to grayscale, applyi
 Install the dependencies using:
 ```bash
 pip install Pillow numpy
+
+
+This is ready to be saved directly into a `README.md` file!
